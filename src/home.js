@@ -7,16 +7,6 @@ function pageLoad() {
     const home = document.createElement("div");
     home.setAttribute("id", "home");
 
-    const nav = document.createElement("nav");
-    const navbar = createE("div", false, "navbar");
-    navbar.appendChild(createE("a", "Home", "nav-link", "#home"));
-    navbar.appendChild(createE("a", "Menu", "nav-link", "#menu"));
-    navbar.appendChild(createE("a", "Contact", "nav-link", "#contact"));
-    nav.appendChild(createE("h1", "Hilton Tashkent City"));
-    nav.appendChild(createE("h3", "City 21 Pan Asian Restaurant"));
-    nav.appendChild(navbar);
-    home.appendChild(nav);
-
     const main = createE("main");
     const container = createE("div", false, "navbar");
     container.appendChild(createImg(hilton1, "photo"))
