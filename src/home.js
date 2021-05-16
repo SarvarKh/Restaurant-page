@@ -19,13 +19,16 @@ function pageLoad() {
 
     const main = createE("main");
     const container = createE("div", false, "navbar");
-    
     container.appendChild(createImg(hilton1, "photo"))
     container.appendChild(createImg(hilton2, "photo"))
     container.appendChild(createImg(hilton3, "photo"))
     container.appendChild(createImg(hilton4, "photo"))
+    const descr = createE("p");
+    descr.innerHTML = "Appreciate stunning views from the Pan Asian restaurant which is located on the top 21th floor, open from lunchtime until late evening and serving some of the finest dishes in the city. Enjoy the city from our spacious outdoor terrace while indulging in a wide range of wines and international spirits. Relax to some of the coolest music, while savoring delicacies prepared by our chef."
     main.appendChild(container);
+    main.appendChild(descr);
     home.appendChild(main);
+
     return home;
 }
 
