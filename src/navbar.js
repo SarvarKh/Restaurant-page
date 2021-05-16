@@ -3,9 +3,9 @@ function navbarLoad(params) {
     
     const nav = document.createElement("nav");
     const navbar = createE("div", false, "navbar");
-    navbar.appendChild(createE("a", "Home", "nav-link", "#home"));
-    navbar.appendChild(createE("a", "Menu", "nav-link", "#menu"));
-    navbar.appendChild(createE("a", "Contact", "nav-link", "#contact"));
+    navbar.appendChild(createE("button", "Home", "nav-btn"));
+    navbar.appendChild(createE("button", "Menu", "nav-btn"));
+    navbar.appendChild(createE("button", "Contact", "nav-btn"));
     nav.appendChild(createE("h1", "Hilton Tashkent City"));
     nav.appendChild(createE("h3", "City 21 Pan Asian Restaurant"));
     nav.appendChild(navbar);
@@ -14,7 +14,7 @@ function navbarLoad(params) {
     return container;
 }
 
-function createE(elementName, content, className, href) {
+function createE(elementName, content, className) {
     let element = document.createElement(elementName);
     
     if (content) {
@@ -25,9 +25,6 @@ function createE(elementName, content, className, href) {
         element.classList.toggle(className);
     }
 
-    if (href) {
-        element.href = href;
-    }
     return element;
 }
 
