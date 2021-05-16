@@ -29,6 +29,36 @@ function pageLoad() {
     main.appendChild(descr);
     home.appendChild(main);
 
+
+    const footer = createE("footer");
+    const footerDiv = createE("div", "Copyright © 2021 Sarvar Khalimov");
+    const linkIcon1 = createE("a", "", "icon-link", "https://github.com/SarvarKh");
+    linkIcon1.setAttribute("target", "_blank")
+    const icon1 = document.createElement("i");
+    icon1.classList.add("fab");
+    icon1.classList.add("fa-github");
+    
+    const linkIcon2 = createE("a", "", "icon-link", "https://www.linkedin.com/in/sarvar-khalimov/");
+    linkIcon2.setAttribute("target", "_blank")
+    const icon2 = document.createElement("i");
+    icon2.classList.add("fab");
+    icon2.classList.add("fa-linkedin");
+    
+    const linkIcon3 = createE("a", "", "icon-link", "https://sarvarkh.github.io/portfolio/");
+    linkIcon3.setAttribute("target", "_blank")
+    const icon3 = document.createElement("i");
+    icon3.classList.add("fas");
+    icon3.classList.add("fa-folder-open");
+    
+    linkIcon1.appendChild(icon1);
+    linkIcon2.appendChild(icon2);
+    linkIcon3.appendChild(icon3);
+    footerDiv.appendChild(linkIcon1);
+    footerDiv.appendChild(linkIcon2);
+    footerDiv.appendChild(linkIcon3);
+    footer.appendChild(footerDiv);
+    home.appendChild(footer);
+
     return home;
 }
 
