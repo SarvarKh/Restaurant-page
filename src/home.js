@@ -19,11 +19,11 @@ function pageLoad() {
 
     const main = createE("main");
     const container = createE("div", false, "navbar");
-    createImg(hilton1, container, "photo")
-    createImg(hilton2, container, "photo")
-    createImg(hilton3, container, "photo")
-    createImg(hilton4, container, "photo")
     
+    container.appendChild(createImg(hilton1, "photo"))
+    container.appendChild(createImg(hilton2, "photo"))
+    container.appendChild(createImg(hilton3, "photo"))
+    container.appendChild(createImg(hilton4, "photo"))
     main.appendChild(container);
     home.appendChild(main);
     return home;
@@ -46,11 +46,12 @@ function createE(elementName, content, className, href) {
     return element;
 }
 
-function createImg(source, appendTo, className) {
+function createImg(source, className) {
     let photo = new Image();
     photo.src = source;
     photo.classList.add(className)
-    appendTo.appendChild(photo);
+
+    return photo
 }
 
 
