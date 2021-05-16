@@ -1,4 +1,6 @@
 import loadHome from './home';
+import loadMenu from './menu';
+import loadContact from './contact';
 
 function createHeader() {
     const nav = document.createElement("nav");
@@ -37,7 +39,7 @@ function createHeader() {
     return nav;
 }
 
-function createE(elementName, content, className) {
+function createE(elementName, content, className, href) {
     let element = document.createElement(elementName);
     
     if (content) {
@@ -48,16 +50,18 @@ function createE(elementName, content, className) {
         element.classList.toggle(className);
     }
 
+    if (href) {
+        element.href = href;
+    }
+
     return element;
 }
 
 function setActiveButton(button) {
-    const buttons = document.querySelectorAll(".button-nav");
+    const buttons = document.querySelectorAll(".nav-btn");
   
-    buttons.forEach((button) => {
-      if (button !== this) {
-        button.classList.remove("active");
-      }
+    buttons.forEach((btn) => {
+        btn.classList.remove("active");
     });
   
     button.classList.add("active");
@@ -104,6 +108,7 @@ function createFooter() {
 
 function start() {
     const content = document.getElementById("content");
+
     content.appendChild(createHeader());
     content.appendChild(createMain());
     content.appendChild(createFooter());

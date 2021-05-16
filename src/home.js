@@ -49,6 +49,7 @@ function createImg(source, className) {
 
 function loadHome() {
     const main = document.querySelector("#main");
+    main.textContent = "";
     main.appendChild(createHome());
 }
 
