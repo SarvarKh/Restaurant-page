@@ -16,7 +16,47 @@
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction pageLoad() {\n    const home = document.createElement(\"div\");\n    home.setAttribute(\"id\", \"home\");\n\n    const nav = document.createElement(\"nav\");\n    const navbar = createE(\"div\", false, \"navbar\");\n    navbar.appendChild(createE(\"a\", \"Home\", \"nav-link\", \"#home\"));\n    navbar.appendChild(createE(\"a\", \"Menu\", \"nav-link\", \"#menu\"));\n    navbar.appendChild(createE(\"a\", \"Contact\", \"nav-link\", \"#contact\"));\n    nav.appendChild(createE(\"h1\", \"Hilton Tashkent City\"));\n    nav.appendChild(createE(\"h3\", \"City 21 Pan Asian Restaurant\"));\n    nav.appendChild(navbar);\n    home.appendChild(nav);\n\n    return home;\n}\n\nfunction createE(elementName, content, className, href) {\n    let element = document.createElement(elementName);\n    \n    if (content) {\n        element.innerHTML = content;\n    }\n\n    if (className) {\n        element.classList.toggle(className);\n    }\n\n    if (href) {\n        element.href = href;\n    }\n    return element;\n}\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageLoad);\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _images_hilton05_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/hilton05.jpg */ \"./src/images/hilton05.jpg\");\n/* harmony import */ var _images_hilton04_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/hilton04.jpg */ \"./src/images/hilton04.jpg\");\n/* harmony import */ var _images_hilton03_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/hilton03.jpg */ \"./src/images/hilton03.jpg\");\n/* harmony import */ var _images_home_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/home.jpg */ \"./src/images/home.jpg\");\n\n\n\n\n\nfunction pageLoad() {\n    const home = document.createElement(\"div\");\n    home.setAttribute(\"id\", \"home\");\n\n    const nav = document.createElement(\"nav\");\n    const navbar = createE(\"div\", false, \"navbar\");\n    navbar.appendChild(createE(\"a\", \"Home\", \"nav-link\", \"#home\"));\n    navbar.appendChild(createE(\"a\", \"Menu\", \"nav-link\", \"#menu\"));\n    navbar.appendChild(createE(\"a\", \"Contact\", \"nav-link\", \"#contact\"));\n    nav.appendChild(createE(\"h1\", \"Hilton Tashkent City\"));\n    nav.appendChild(createE(\"h3\", \"City 21 Pan Asian Restaurant\"));\n    nav.appendChild(navbar);\n    home.appendChild(nav);\n\n    const main = createE(\"main\");\n    const container = createE(\"div\", false, \"navbar\");\n    createImg(_images_hilton05_jpg__WEBPACK_IMPORTED_MODULE_0__, container, \"photo\")\n    createImg(_images_hilton04_jpg__WEBPACK_IMPORTED_MODULE_1__, container, \"photo\")\n    createImg(_images_hilton03_jpg__WEBPACK_IMPORTED_MODULE_2__, container, \"photo\")\n    createImg(_images_home_jpg__WEBPACK_IMPORTED_MODULE_3__, container, \"photo\")\n    \n    main.appendChild(container);\n    home.appendChild(main);\n    return home;\n}\n\nfunction createE(elementName, content, className, href) {\n    let element = document.createElement(elementName);\n    \n    if (content) {\n        element.innerHTML = content;\n    }\n\n    if (className) {\n        element.classList.toggle(className);\n    }\n\n    if (href) {\n        element.href = href;\n    }\n    return element;\n}\n\nfunction createImg(source, appendTo, className) {\n    let photo = new Image();\n    photo.src = source;\n    photo.classList.add(className)\n    appendTo.appendChild(photo);\n}\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageLoad);\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
+
+/***/ }),
+
+/***/ "./src/images/hilton03.jpg":
+/*!*********************************!*\
+  !*** ./src/images/hilton03.jpg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"411e7287e3a4eb89cd06.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/images/hilton03.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/hilton04.jpg":
+/*!*********************************!*\
+  !*** ./src/images/hilton04.jpg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"d7d51205fdb65d46a687.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/images/hilton04.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/hilton05.jpg":
+/*!*********************************!*\
+  !*** ./src/images/hilton05.jpg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"06bfd9bbc3f5e4982f09.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/images/hilton05.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/home.jpg":
+/*!*****************************!*\
+  !*** ./src/images/home.jpg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"6d9e1785b0301dca51ee.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/images/home.jpg?");
 
 /***/ }),
 
@@ -69,6 +109,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hom
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -83,6 +135,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hom
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/

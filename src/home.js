@@ -1,3 +1,8 @@
+import hilton1 from "./images/hilton05.jpg"
+import hilton2 from "./images/hilton04.jpg"
+import hilton3 from "./images/hilton03.jpg"
+import hilton4 from "./images/home.jpg"
+
 function pageLoad() {
     const home = document.createElement("div");
     home.setAttribute("id", "home");
@@ -12,6 +17,15 @@ function pageLoad() {
     nav.appendChild(navbar);
     home.appendChild(nav);
 
+    const main = createE("main");
+    const container = createE("div", false, "navbar");
+    createImg(hilton1, container, "photo")
+    createImg(hilton2, container, "photo")
+    createImg(hilton3, container, "photo")
+    createImg(hilton4, container, "photo")
+    
+    main.appendChild(container);
+    home.appendChild(main);
     return home;
 }
 
@@ -30,6 +44,13 @@ function createE(elementName, content, className, href) {
         element.href = href;
     }
     return element;
+}
+
+function createImg(source, appendTo, className) {
+    let photo = new Image();
+    photo.src = source;
+    photo.classList.add(className)
+    appendTo.appendChild(photo);
 }
 
 
