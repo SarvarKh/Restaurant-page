@@ -3,7 +3,7 @@ import hilton2 from "./images/hilton04.jpg"
 import hilton3 from "./images/hilton03.jpg"
 import hilton4 from "./images/home.jpg"
 
-function pageLoad() {
+function createHome() {
     const home = document.createElement("div");
     home.setAttribute("id", "home");
 
@@ -77,5 +77,9 @@ function createImg(source, className) {
     return photo
 }
 
+function loadHome() {
+    const main = document.querySelector("#main");
+    main.appendChild(createHome());
+}
 
-export default pageLoad
+export default loadHome

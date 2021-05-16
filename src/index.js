@@ -1,12 +1,3 @@
-import navbarLoad from './navbar';
-import pageLoad from './home';
+import start from './navbar';
 
-function component() {
-  const element = document.createElement('div');
-  element.appendChild(navbarLoad());
-  element.appendChild(pageLoad());
-
-  return element;
-}
-
-document.body.appendChild(component());
+document.body.appendChild(start());
