@@ -1,3 +1,8 @@
+import menuImg from './images/menu.jpg';
+import menu01 from './images/menu01.jpg';
+import menu02 from './images/menu02.jpg';
+import menu03 from './images/menu03.jpg';
+
 function createE(elementName, content, className, href) {
   const element = document.createElement(elementName);
   if (content) { element.innerHTML = content; }
@@ -20,7 +25,7 @@ function createMenu() {
   const chefH2 = createE('h2', 'Rusnadin Mukhtar: "I love challenges"');
   const chefP = createE('p', 'The magician responsible for the gastronomic delights of the guests is the chef Rusnadin Mukhtar, specially invited to Tashkent.');
   const chefText = createE('div', false, 'chef-text');
-  const chefImg = createImg('../src/images/menu.jpg');
+  const chefImg = createImg(menuImg);
   chefText.appendChild(chefH2);
   chefText.appendChild(chefP);
   chef.appendChild(chefText);
@@ -29,7 +34,7 @@ function createMenu() {
 
   const menuCards = createE('div', false, 'menu-cards');
   const card1 = createE('div', false, 'card');
-  const card1Img = createImg('../src/images/menu01.jpg');
+  const card1Img = createImg(menu01);
   const card1Text = createE('div', false, 'card-text');
   const card1H5 = createE('h5', 'Spicy beef salad');
   const card1P = createE('p');
@@ -41,7 +46,7 @@ function createMenu() {
   menuCards.appendChild(card1);
 
   const card2 = createE('div', false, 'card');
-  const card2Img = createImg('../src/images/menu02.jpg');
+  const card2Img = createImg(menu02);
   const card2Text = createE('div', false, 'card-text');
   const card2H5 = createE('h5', 'Nasi Goreng');
   const card2P = createE('p');
@@ -53,7 +58,7 @@ function createMenu() {
   menuCards.appendChild(card2);
 
   const card3 = createE('div', false, 'card');
-  const card3Img = createImg('../src/images/menu03.jpg');
+  const card3Img = createImg(menu03);
   const card3Text = createE('div', false, 'card-text');
   const card3H5 = createE('h5', 'Shrimp with wasabi');
   const card3P = createE('p');
