@@ -101,6 +101,27 @@ footer a {
 }
 
 /* Menu page */
+.menu-cards {
+    margin: 2rem 0;
+}
+
 .card {
-    
+    display: flex;
+    padding-bottom: 2rem;
+}
+
+.card img {
+    width: 40vw;
+    padding-right: 1rem;
+}
+
+.card-text h5 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+    text-align: justify;
 }
