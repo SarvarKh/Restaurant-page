@@ -1,3 +1,19 @@
+function createE(elementName, content, className, href) {
+  const element = document.createElement(elementName);
+  if (content) { element.innerHTML = content; }
+  if (className) { element.classList.toggle(className); }
+  if (href) { element.href = href; }
+  return element;
+}
+
+function createImg(source, className) {
+  const photo = new Image();
+  photo.src = source;
+  photo.classList.add(className);
+
+  return photo;
+}
+
 function createMenu() {
   const menu = createE('div', false, 'menu');
   const chef = createE('div', false, 'chef');
@@ -50,22 +66,6 @@ function createMenu() {
 
   menu.appendChild(menuCards);
   return menu;
-}
-
-function createE(elementName, content, className, href) {
-  const element = document.createElement(elementName);
-  if (content) { element.innerHTML = content; }
-  if (className) { element.classList.toggle(className); }
-  if (href) { element.href = href; }
-  return element;
-}
-
-function createImg(source, className) {
-  const photo = new Image();
-  photo.src = source;
-  photo.classList.add(className);
-
-  return photo;
 }
 
 function loadMenu() {

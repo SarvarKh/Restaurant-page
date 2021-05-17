@@ -2,6 +2,34 @@ import loadHome from './home';
 import loadMenu from './menu';
 import loadContact from './contact';
 
+function createE(elementName, content, className, href) {
+  const element = document.createElement(elementName);
+
+  if (content) {
+    element.innerHTML = content;
+  }
+
+  if (className) {
+    element.classList.toggle(className);
+  }
+
+  if (href) {
+    element.href = href;
+  }
+
+  return element;
+}
+
+function setActiveButton(button) {
+  const buttons = document.querySelectorAll('.nav-btn');
+
+  buttons.forEach((btn) => {
+    btn.classList.remove('active');
+  });
+
+  button.classList.add('active');
+}
+
 function createHeader() {
   const nav = document.createElement('nav');
 
@@ -39,34 +67,6 @@ function createHeader() {
   nav.appendChild(buttons);
 
   return nav;
-}
-
-function createE(elementName, content, className, href) {
-  const element = document.createElement(elementName);
-
-  if (content) {
-    element.innerHTML = content;
-  }
-
-  if (className) {
-    element.classList.toggle(className);
-  }
-
-  if (href) {
-    element.href = href;
-  }
-
-  return element;
-}
-
-function setActiveButton(button) {
-  const buttons = document.querySelectorAll('.nav-btn');
-
-  buttons.forEach((btn) => {
-    btn.classList.remove('active');
-  });
-
-  button.classList.add('active');
 }
 
 function createMain() {
