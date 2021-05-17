@@ -153,3 +153,36 @@ footer a {
     line-height: 1.9rem;
     text-align: justify;
 }
+
+/* Contact Page */
+.background-image {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.background-image > div {
+    padding: 3rem;
+}
+
+.contact1 > h3, div {
+    padding-bottom: 1rem;
+}
+
+.contact1 i {
+    margin: 0 2rem 0 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.contact2 h3 {
+    padding-bottom: 1rem;
+}
+
+.social {
+    padding-left: 1rem;
+}
+
+.social i {
+    margin-right: 2rem;
+    font-size: 2rem;
+}
