@@ -7,8 +7,8 @@ function createHome() {
     const home = document.createElement("div");
     home.setAttribute("id", "home");
 
-    const main = createE("main");
-    const container = createE("div", false, "navbar");
+    const main = createE("div");
+    const container = createE("div", false, "container");
     container.appendChild(createImg(hilton1, "photo"))
     container.appendChild(createImg(hilton2, "photo"))
     container.appendChild(createImg(hilton3, "photo"))

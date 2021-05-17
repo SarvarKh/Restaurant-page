@@ -5,21 +5,23 @@ import loadContact from './contact';
 function createHeader() {
     const nav = document.createElement("nav");
 
+    const buttons = createE("div", false, "buttons");
+
     const homeButton = createE("button", "Home", "nav-btn");
     homeButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(homeButton);
         loadHome();
       });
-    nav.appendChild(homeButton);
-
+    buttons.appendChild(homeButton);
+    
     const menuButton = createE("button", "Menu", "nav-btn");
     menuButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(menuButton);
         loadMenu();
     });
-    nav.appendChild(menuButton);
+    buttons.appendChild(menuButton);
 
     const contactButton = createE("button", "Contact", "nav-btn");
     contactButton.addEventListener("click", (e) => {
@@ -27,14 +29,14 @@ function createHeader() {
         setActiveButton(contactButton);
         loadContact();
     });
-    nav.appendChild(contactButton);
+    buttons.appendChild(contactButton);
 
-    nav.appendChild(createE("h1", "Hilton Tashkent City"));
-    nav.appendChild(createE("h3", "City 21 Pan Asian Restaurant"));
+    const navText = createE("div", false, "nav-text");
+    navText.appendChild(createE("h1", "Hilton Tashkent City"));
+    navText.appendChild(createE("h3", "City 21 Pan Asian Restaurant"));
+    nav.appendChild(navText);
 
-    nav.appendChild(homeButton);
-    nav.appendChild(menuButton);
-    nav.appendChild(contactButton);
+    nav.appendChild(buttons);
   
     return nav;
 }
