@@ -2,11 +2,13 @@ function createMenu() {
     const menu = createE("div", false, "menu");
     const chef = createE("div", false, "chef");
     const chefH2 = createE("h2", 'Rusnadin Mukhtar: "I love challenges"');
-    const chefImg = createImg("../src/images/menu.jpg")
-    const chefP = createE("p", "The magician responsible for the gastronomic delights of the guests is the chef Rusnadin Mukhtar, specially invited to Tashkent.")
-    chef.appendChild(chefH2);
+    const chefP = createE("p", "The magician responsible for the gastronomic delights of the guests is the chef Rusnadin Mukhtar, specially invited to Tashkent.");
+    const chefText = createE("div", false, "chef-text");
+    const chefImg = createImg("../src/images/menu.jpg");
+    chefText.appendChild(chefH2);
+    chefText.appendChild(chefP);
+    chef.appendChild(chefText);
     chef.appendChild(chefImg);
-    chef.appendChild(chefP);
     menu.appendChild(chef);
 
     const menuCards = createE("div", false, "menu-cards");

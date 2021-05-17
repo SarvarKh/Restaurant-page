@@ -77,6 +77,7 @@ footer a {
 
 /* Home page */
 #home .container {
+    margin-top: 7rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem 3rem;
@@ -101,6 +102,33 @@ footer a {
 }
 
 /* Menu page */
+.chef {
+    margin-top: 7rem;
+    display: flex;
+}
+
+.chef h2 {
+    padding: 1rem 0;
+}
+
+.chef img {
+    width: 60%;
+}
+
+.chef-text {
+    width: 40%;
+    padding-right: 1rem;
+}
+
+.chef-text h2 {
+    font-size: 4rem;
+}
+
+.chef-text p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
 .menu-cards {
     margin: 2rem 0;
 }
