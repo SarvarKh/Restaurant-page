@@ -115,7 +115,7 @@ function start() {
   content.appendChild(createMain());
   content.appendChild(createFooter());
 
-  setActiveButton(document.querySelector('.button-nav'));
+  setActiveButton(document.querySelector('.nav-btn'));
   loadHome();
 }
 
