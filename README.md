@@ -2,7 +2,7 @@
 
 # Restaurant page - Hilton Tashkent City
 
-> A simple restaurant homepage dynamically rendered in JavaScript using the Webpack. Personnaly Custumized for [City 21 Pan Asian  Restaurant](https://www.facebook.com/City21restaurant/) located in [Hilton Tashkent City](https://www.hilton.com/en/hotels/tastchi-hilton-tashkent-city/dining/).
+> A simple restaurant homepage dynamically rendered in JavaScript using the Webpack. Personally customized for [City 21 Pan Asian  Restaurant](https://www.facebook.com/City21restaurant/) located in [Hilton Tashkent City](https://www.hilton.com/en/hotels/tastchi-hilton-tashkent-city/dining/).
 
 ![screenshot](screenshots/desktop.png)
 
@@ -22,6 +22,10 @@
 ## Live Demo
 
 [Live Demo Link](https://hilton-tashkent-city-restaurant.netlify.app/)
+
+## Website demo on YouTube 
+
+[YouTube Demo Link](https://youtu.be/bu1iZP0u8zk)
 
 ## Getting Started
 
