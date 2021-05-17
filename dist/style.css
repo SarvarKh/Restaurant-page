@@ -186,3 +186,60 @@ footer a {
     margin-right: 2rem;
     font-size: 2rem;
 }
+
+
+@media only screen 
+    and (min-device-width: 220px) 
+    and (max-device-width: 992px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+        nav {
+            justify-content: space-evenly;
+        }
+
+        .nav-text {
+            display: none;
+        }
+
+        footer {
+            font-size: 0.9rem;
+        }
+
+        /* Home */
+        #home .container {
+            grid-template-columns: 1fr;
+            grid-gap: 2rem 3rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Menu */
+        .chef {
+            flex-wrap: wrap;
+        }
+        .chef img {
+            width: 100%;
+        }
+        
+        .chef-text {
+            width: 100%;
+        }
+
+        .chef-text h2 {
+            font-size: 2rem;
+        }
+        
+        .chef-text p {
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+        
+        .card {
+            padding-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .card img {
+            width: 100%;
+            padding-right: 1rem;
+            padding-bottom: 1rem;
+        }
+} 
