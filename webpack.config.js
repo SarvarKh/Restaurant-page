@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  mode: "development",
+  mode: 'development',
   entry: './src/index.js',
   output: {
     filename: 'main.js',
@@ -12,7 +12,7 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
-      }
-    ]
-  }
+      },
+    ],
+  },
 };
