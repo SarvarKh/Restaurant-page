@@ -2,7 +2,7 @@
 
 # Restaurant page - Hilton Tashkent City
 
-> A simple restaurant homepage dynamically rendered in JavaScript using the Webpack.
+> A simple restaurant homepage dynamically rendered in JavaScript using the Webpack. Personnaly Custumized for [City 21 Pan Asian  Restaurant](https://www.facebook.com/City21restaurant/) located in [Hilton Tashkent City](https://www.hilton.com/en/hotels/tastchi-hilton-tashkent-city/dining/).
 
 ![screenshot](screenshots/desktop.png)
 
@@ -11,9 +11,12 @@
   <img src="screenshots/mobile02.png?raw=true" width="40%" height="auto"/>
 </div>
 
+> A restaurant page is part of Full-Stack JavaScript Curriculum in the [the Odin Project’s](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/restaurant-page).
+
 ## Built With
 
 - JavaScript
+- Webpack
 - CSS
 
 ## Live Demo
