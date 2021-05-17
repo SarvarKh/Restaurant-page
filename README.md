@@ -18,7 +18,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://amazing-visvesvaraya-c067d2.netlify.app/)
+[Live Demo Link](https://hilton-tashkent-city-restaurant.netlify.app/)
 
 ## Getting Started
 
