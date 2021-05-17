@@ -91,3 +91,11 @@ footer a {
     box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.9);
 }
 
+#home p {
+    padding: 2rem 1rem 6rem 1rem;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    text-align: justify;
+    text-indent: 4rem;
+    font-weight: 500;
+}
