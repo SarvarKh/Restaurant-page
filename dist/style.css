@@ -49,4 +49,22 @@ nav {
 
 main {
     margin-top: 5rem;
+    padding: 0 2rem;
 }
+
+/* Home page */
+#home .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem 3rem;
+    margin-bottom: 2rem;
+}
+
+#home .container img {
+    display: block;
+    width: 100%;
+    max-height: 50vh;
+    opacity: 0.9;
+    box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.9);
+}
+
