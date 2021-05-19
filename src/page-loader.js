@@ -18,7 +18,7 @@ const createE = (elementName, content, className, href) => {
   }
 
   return element;
-}
+};
 
 function setActiveButton(button) {
   const buttons = document.querySelectorAll('.nav-btn');
