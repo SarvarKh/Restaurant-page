@@ -2,7 +2,7 @@ import loadHome from './home';
 import loadMenu from './menu';
 import loadContact from './contact';
 
-function createE(elementName, content, className, href) {
+const createE = (elementName, content, className, href) => {
   const element = document.createElement(elementName);
 
   if (content) {
